@@ -40,8 +40,9 @@ app.use("/api/product", productRouter);
 app.use("/api/cart", cartRouter);
 app.use("/api/order", orderRouter);
 
+//for api test
 app.get("/", (req, res) => {
-  res.send("API woking fine");
+  res.send("Backend running...");
 });
 
 app.listen(port, () => console.log("Server listning on PORT: " + port));
